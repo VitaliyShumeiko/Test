@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Parrot</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+</head>
+<body>
+<!------------------------------------header---------------------------------------------------->
+<div class="container">
+    <div class="gradient"></div>
+    <header>
+            <div class="logo">
+                <img src="img/logo.png" height="65px" width="100px" alt="Logo"/>
+            </div>
+                <div class="text">
+                    Find Parrot<br>
+                    <small><b>INNOVATE</b> • <b>LIST</b> • <b>CONNECT</b></small>
+                </div>
+                    <nav class="main-navigation">
+                        <ul>
+                            <li><a href="#">All  products</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Log In</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                        </ul>
+                    </nav>
+    </header>
+    <!------------------------------------form search---------------------------------------------------->
+    <div class="main-container">
+        <h1>Quick Search for Your <span>Perfect Product</span></h1>
+        <p>INNOVATE • LIST • CONNECT</p>
+        <form id="search">
+            <select name="category" class="сategory">
+                <option class="placeholder" selected disabled value="">Category</option>
+                <option value="Jira 2017">Jira 2017</option>
+                <option value="Slack Pro">Slack Pro</option>
+                <option value="TraveChat">TraveChat</option>
+                <option value="Time Camp">Time Camp</option>
+            </select>
+            <input type="search" class="text-form" name="text">
+            <input type="submit" class="search" value="Start searching">
+        </form>
+            <div class="buttons">
+                <button class="button"><img src="img/icon_category.png" height="22" width="22"/>All categories</button>
+                <button class="button"><img src="img/Layer 4.png" height="22" width="15"/>How it works?</button>
+            </div>
+    </div>
+</div>
+<!------------------------------------Popular Products---------------------------------------------------->
+        <main>
+            <h2>Most Popular Products</h2>
+            <p>This is the list of products that are most interested in users</p>
+            <div class="overlay">
+
+                    <div class="products"><img src="img/Layer5.png" /><br>Hubstaff Directory</div>
+                    <div class="products"><img src="img/Layer6.png" /><br>Jira 2017</div>
+                    <div class="products"><img src="img/Layer7.png" /><br>Slack Pro</div>
+                    <div class="products"><img src="img/Layer8.png" /><br>TraveChat</div>
+                    <div class="products"><img src="img/Layer9.png" /><br>Network</div>
+                    <div class="products"><img src="img/Layer10.png"/><br>Time Camp</div>
+            </div>
+            <div class="all"><a href="#">All products</a></div>
+        </main>
+<!------------------------------------Response slider---------------------------------------------------->
+<div class="testimonials">
+
+    <h2>Testimonials</h2>
+    <span>What our customers told about us</span>
+
+    <div class="container-1">
+        <div class="carousel">
+            <div class="item a">
+                <div class="item-photo"><img src="img/JohnPhoto-1.png"></div>
+                <p>I have been incredibly impressed with LinkUp team of developers.
+                    They worked hard to deliver the highest-quality product possible
+                    and exceeded my expectations at every step of the way. I initially
+                    found Andriy in search of a better price than what I could find
+                    locally with other development firms. But what I found -
+                    in addition to a better price - was a much higher-quality product as well,
+                    in every way: service, design, development, communications...etc.
+                    5+++ Stars work. Great job.</p>
+                <h3>John Kamman</h3>
+                <h4>Wholesum Founder</h4>
+            </div>
+
+            <!--<div class="item b">B</div>-->
+            <!--<div class="item c">C</div>-->
+
+        </div>
+    </div>
+
+    <div class="next"><img src="img/arrow-pointing-to-right.svg"></div>
+    <div class="prev"><img src="img/left-arrow.svg"></div>
+
+</div>
+
+<!---------------------------------------Feedback--------------------------------------------------------->
+
+<div class="feedback">
+    <h2>Feedback</h2>
+        <form method="post" id="feedback-form" onsubmit="return Validate()">
+            <div id="username_div">
+                <label>Username</label>
+                <input type="text" id="username" class="textInput">
+                <div id="name_error"></div>
+            </div>
+            <div id="email_div">
+                <label>Email</label>
+                <input type="email" id="email" class="textInput">
+                <div id="email_error"></div>
+            </div>
+
+            <div id="Uploaded_image_div">
+                <label for="upload" class="file_upload">Uploaded image preview
+                </label>
+                    <input type='file' id="upload" onchange="readURL(this);" accept="image/jpeg,image/png,image/gif"/>
+                <img id="revision" src="img/180.png" alt="your image" />
+            </div>
+                <input type="submit" id="submit" value="Submit" class="button sub" />
+
+        </form>
+</div>
+<div class="toTop"><button onclick="toTop()" id="top" class="top">Top</button></div>
+<!---------------------------------------Footer--------------------------------------------------------->
+<footer>
+    <div class="footer1">
+            <div class="logo2"><img src="img/logo2.png"/></div>
+        <nav class="footer-navigation">
+            <ul>
+                <li><a href="#" class="menu-link">About Us</a></li>
+                <li><a href="#" class="menu-link">Terms of service</a></li>
+                <li><a href="#" class="menu-link">Privacy policy</a></li>
+                <li><a href="#" class="menu-link">Contact Up</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!------------------------------------Copyright---------------------------------------------------->
+    <div class="Copyright">© 2018 Find Parrot</div>
+
+</footer>
+
+<script src="Script/main.js"></script>
+
+</body>
+</html>
